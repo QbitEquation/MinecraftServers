@@ -1,0 +1,18 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\MinecraftServer\MinecraftServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="ServerManagerFramework">
+      <HintPath>..\..\..\..\..\AppData\Roaming\Server-Manager\ServerManagerFramework.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
