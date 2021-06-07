@@ -1,7 +1,7 @@
 using ServerManagerFramework;
 using MinecraftServer;
 
-[assembly: RequireAddon("MinecraftServer", DownloadURL = "https://github.com/ItzTobias/MinecraftServers/releases/download/v0.0.0.1/MinecraftServer.dll")]
+[assembly: Require("MinecraftServer", ItemType.Addon, DownloadURL = "https://github.com/ItzTobias/MinecraftServers/releases/download/v0.0.0.1/MinecraftServer.dll")]
 
 namespace MinecraftVanilla
 {
