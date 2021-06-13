@@ -4,7 +4,7 @@
 
 namespace MinecraftServer
 {
-    public class MinecraftServerBase : ServerProcess<NewableString>
+    public class MinecraftServerBase : ServerProcess
     {
         public MinecraftServerBase() : base("javaw.exe")
         {
