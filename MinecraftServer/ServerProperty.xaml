@@ -1,0 +1,23 @@
+﻿<StackPanel x:Class="MinecraftServer.ServerProperty"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:MinecraftServer"
+             mc:Ignorable="d" >
+
+    <StackPanel.Resources>
+        <ResourceDictionary Source="/ServerManagerFramework;component/SMR.xaml" />
+    </StackPanel.Resources>
+    
+    <TextBlock Foreground="White"
+               FontSize="11"
+               FontWeight="Bold"
+               Text="{Binding FormattedName, RelativeSource={RelativeSource AncestorType=StackPanel}}"
+               Margin="0, 10, 0, 3" />
+
+    <TextBox Style="{StaticResource BlackTextBox}"
+             x:Name="Value"
+             TextChanged="PropertyValueChanged"
+             GotFocus="SelectAllText" />
+</StackPanel>
